@@ -1,0 +1,247 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: right; /* RTL text alignment */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+  background: rgba(51, 51, 51, 0.9);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 1.2em;
+}
+
+#theme-toggle {
+  background: #0077b5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+#theme-toggle:hover {
+  background: #005f8b;
+}
+
+/* Picture Section Styles */
+#picture {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#picture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styles */
+section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+body.dark-mode section {
+  background: #333;
+  color: #f4f4f4;
+}
+
+h2 {
+  color: #333;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  font-size: 1.8em;
+}
+
+body.dark-mode h2 {
+  color: #f4f4f4;
+  border-bottom: 2px solid #f4f4f4;
+}
+
+ul {
+  list-style-type: square;
+  padding-right: 20px;
+}
+
+/* Job Experience Styles */
+.job {
+  margin-bottom: 20px;
+}
+
+.job h3 {
+  margin: 0;
+  font-size: 1.4em;
+}
+
+.job p {
+  margin: 5px 0;
+  font-size: 1.1em;
+}
+
+/* Contact Section Styles */
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.contact-info i {
+  margin-left: 10px;
+  color: #333;
+}
+
+body.dark-mode .contact-info i {
+  color: #f4f4f4;
+}
+
+.contact-info a {
+  color: #333;
+  text-decoration: none;
+}
+
+body.dark-mode .contact-info a {
+  color: #f4f4f4;
+}
+
+.contact-info a:hover {
+  color: #0077b5;
+  text-decoration: underline;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 1.5em;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode .social-links a {
+  color: #f4f4f4;
+}
+
+.social-links a:hover {
+  color: #0077b5;
+}
+
+.social-links .fa-telegram:hover {
+  color: #0088cc;
+}
+
+/* Form Styles */
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+
+input, textarea, button {
+  width: 97.5%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+button {
+  background: #333333;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+body.dark-mode button {
+  background: #555;
+}
+
+button:hover {
+  background: #555;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #333;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 60px; /* فاصله از دکمه بازگشت به بالا */
+  font-size: 0.9em;
+}
+
+body.dark-mode footer {
+  background: #1a1a1a;
+}
+
+/* Back to Top Button */
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 20px; /* تغییر به سمت چپ */
+  background: #ff0000; /* رنگ قرمز */
+  color: #fff;
+  border: none;
+  padding: 10px 20px; /* اندازه مربع */
+  cursor: pointer;
+  border-radius: 4px; /* لبه‌های مربع */
+  font-size: 1em;
+  transition: background 0.3s ease;
+}
+
+#back-to-top:hover {
+  background: #cc0000; /* رنگ قرمز تیره‌تر هنگام هاور */
+}
